@@ -9,7 +9,9 @@ const Hero = () => {
    className="h-[78vh] bg-cover bg-no-repeat bg-left-top flex flex-col lg:flex-row items-end lg:items-center justify-between px-4 xs:px-8 sm:px-10 md:px-12 lg:pr-12 lg:pl-16"
    style={{ backgroundImage: `url(${bgImage})` }}
   >
-   <div className="mt-16 xs:mt-[5rem] sm:mt-[7rem] md:mt-20 lg:mt-24 z-20 ">
+   <div
+    className="mt-16 xs:mt-[5rem] sm:mt-[7rem] md:mt-20 lg:mt-24 z-20 "
+   >
     <h1 className="text-[1.9rem] md:text-[2.8rem] text-[#181E4B] font-bold leading sm:w-[80%] md:w-[90%] lg:w-[90%]">
      Get Trained At Platform Lead ICT Solution
     </h1>

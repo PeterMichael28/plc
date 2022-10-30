@@ -11,6 +11,8 @@ import GraphImg from '../assets/graph.png'
 import Ielts from '../assets/ielts.png'
 import DigiImg from "../assets/dig.png";
 
+import { useEffect } from 'react';
+
 
 const TopCourses = () => {
   const course = {
@@ -36,20 +38,23 @@ const TopCourses = () => {
 
 
   return (
+
+
+
    <section className="md:px-1 lg:px-20 mt-16 md:mt-28 flex flex-col items-center">
     <h1 className="text-center mb-2 md:mb-6 text-3xl md:text-4xl font-bold">
      Our Top Courses
     </h1>
     <div className="flex flex-wrap item-center justify-around">
-     <Course title="Frontend Development" prices='#150,000' img={FrontImg} p={course.frontEnd} />
-     <Course title="Backend Development" prices='#200,000' img={BackImg} p={course.backEnd}/>
-     <Course title="UI/UX Design" prices='#100,000' img={UiImg} p={course.Ui}/>
-     <Course title="Data Science" prices='#300,000' img={DataImg} p={course.datSci}/>
-     <Course title="Digital Marketing" prices='#150,000' img={DigiImg} p={course.digiM}/>
-     <Course title="Python" prices='#150,000' img={PythonImg} p={course.pyth}/>
-     <Course title="IELTS Training" prices='#40,000' img={Ielts} p={course.ielts}/>
-      <Course title="Mobile Development" prices='#150,000' img={ MobileImg } p={course.mobileDev}/>
-      <Course title="Graphics and Multimedia" prices='#100,000' img={GraphImg} p={course.graph}/>
+     <Course title="Frontend Development" prices='#150,000' img={FrontImg} p={course.frontEnd} data='fade-up' />
+     <Course title="Backend Development" prices='#200,000' img={BackImg} p={course.backEnd} data='fade-in'/>
+     <Course title="UI/UX Design" prices='#100,000' img={UiImg} p={course.Ui} data="fade-right" />
+     <Course title="Data Science" prices='#300,000' img={DataImg} p={course.datSci} data="fade-left"/>
+     <Course title="Digital Marketing" prices='#150,000' img={DigiImg} p={course.digiM} data="fade-down"/>
+     <Course title="Python" prices='#150,000' img={PythonImg} p={course.pyth} data="fade-up-right"/>
+     <Course title="IELTS Training" prices='#40,000' img={Ielts} p={course.ielts} data="fade-down"/>
+      <Course title="Mobile Development" prices='#150,000' img={ MobileImg } p={course.mobileDev} data="fade-up-left"/>
+      <Course title="Graphics and Multimedia" prices='#100,000' img={GraphImg} p={course.graph} data="fade-down-right"/>
     </div>
     <a
      href="#"

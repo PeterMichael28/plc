@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import Homepage from './pages/Homepage';
 import {
@@ -9,7 +9,11 @@ import Layout from './Layout';
 import Contact from './pages/Contact';
 import About from './pages/About';
 
+
 function App() {
+
+  // ..
+ 
 
   return (
    <>

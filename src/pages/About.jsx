@@ -53,13 +53,25 @@ const About = () => {
      </p>
     </div>
     <div className="mt-12">
-     <SingleAbout about={about1} classes="md:space-x-8 " />
+     <SingleAbout
+      about={about1}
+      classes="md:space-x-8 "
+      data1="fade-right"
+      data2="fade-left"
+     />
      <SingleAbout
       about={about2}
       classes="md:flex-row-reverse"
-      mr= 'md:mr-8'
+      mr="md:mr-8"
+      data1="fade-left"
+      data2="fade-right"
      />
-     <SingleAbout about={about3} classes="md:space-x-8 " />
+     <SingleAbout
+      about={about3}
+      classes="md:space-x-8"
+      data1="fade-right"
+      data2="fade-left"
+     />
     </div>
    </main>
   );
