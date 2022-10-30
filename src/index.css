@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    .header {
+        @apply fixed top-0 z-50 flex w-full items-center justify-between transition-all px-28 py-7;
+    }
+}
+@layer components {
+    .nav-link {
+        @apply cursor-pointer text-[1.2rem] font-semibold text-black transition duration-[.2s] hover:text-[#FF6600];
+    }
+    .active {
+        @apply text-[#FF6600]
+    }
+    .inactive {
+        @apply text-black
+    }
+}
