@@ -6,7 +6,7 @@ import Button from "./Button";
 const Hero = () => {
  return (
   <section
-   className="h-[78vh] bg-cover bg-no-repeat bg-left-top flex flex-col lg:flex-row items-end lg:items-center justify-between px-4 xs:px-8 sm:px-10 md:px-12 lg:pr-12 lg:pl-16"
+   className="h-[78vh] bg-cover bg-no-repeat bg-center md:bg-left-top flex flex-col lg:flex-row items-end lg:items-center justify-between px-4 xs:px-8 sm:px-10 md:px-12 lg:pr-12 lg:pl-16"
    style={{ backgroundImage: `url(${bgImage})` }}
   >
    <div

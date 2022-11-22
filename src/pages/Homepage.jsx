@@ -11,19 +11,16 @@ const Homepage = () => {
   const text =" Still confused about your career choice? consult with our Counsellors"
 
   return (
-   <main
-    className=""
-      >
-    <div className='flex flex-col h-screen overflow-hidden'>
-    <Hero />
-    <Bar />  
+   <main className="">
+    <div className="flex flex-col h-screen overflow-hidden">
+     <Hero />
+     <Bar />
     </div>
-        <TopCourses />
-        <Training />
-        <Banner text={text} />
-        <Testimony />
-      </main>
-      
+    <TopCourses title="Our Top Courses" />
+    <Training />
+    <Banner text={text} />
+    <Testimony />
+   </main>
   );
 }
 

@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/logo1.png";
 import { BiMenu } from "react-icons/bi";
 import Nav from "../components/Nav";
+import { Link } from "react-router-dom";
 
 export default function Navbar({ fixed }) {
     const [ navbarOpen, setNavbarOpen ] = useState( false );
@@ -31,9 +32,9 @@ export default function Navbar({ fixed }) {
     >
      <div className="containe w-[100%] px-4 mx-auto flex flex-wrap items-center justify-between">
       <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-       <a
+       <Link
         className="text-sm font-bold leading-relaxed inline-block mr-4 py-1 whitespace-nowrap uppercase text-black"
-        href="#pablo"
+        to="/plc"
        >
         <img
          src={Logo}
@@ -42,7 +43,7 @@ export default function Navbar({ fixed }) {
          height={100}
          className="cursor-pointer object-contain  m-0 p-0"
         />
-       </a>
+       </Link>
        <button
         className="text-black cursor-pointer text-xl leading-none px-3 py-0 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
         type="button"

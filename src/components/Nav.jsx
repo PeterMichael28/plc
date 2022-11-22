@@ -38,13 +38,15 @@ const Nav = ({navbarOpen, setNavbarOpen}) => {
        </NavLink>
       </li>
       <li className="nav-link">
-       <a
-        href="#"
-        className={`px-3 py-1 flex items-center hover:opacity-75`}
+       <NavLink
+        to="/plc/courses"
+        className={`px-3 py-1 flex items-center hover:opacity-75 ${({
+         isActive,
+        }) => (isActive ? "active" : "inactive")}`} // setting the active class
         onClick={() => setNavbarOpen(!navbarOpen)} //closing the nav onClick
        >
         <span className="ml-2">Courses</span>
-       </a>
+       </NavLink>
       </li>
       <li className="nav-link">
        <NavLink

@@ -12,9 +12,10 @@ import Ielts from '../assets/ielts.png'
 import DigiImg from "../assets/dig.png";
 
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 
-const TopCourses = () => {
+const TopCourses = ({title}) => {
   const course = {
    frontEnd:
     "Learn how to work and code with different languages such as Html, CSS, Tailwind, Javascript, Deploying HTML CSS on cPanel, Bootstrap 5, React Js, Redux, Next Js, Typescript and so much more.",
@@ -39,22 +40,46 @@ const TopCourses = () => {
 
   return (
 
-
-
-   <section className="md:px-1 lg:px-20 mt-16 md:mt-28 flex flex-col items-center">
-    <h1 className="text-center mb-2 md:mb-6 text-3xl md:text-4xl font-bold">
+   <section className="md:px-1 lg:px-20 mt-14 md:mt-24 flex flex-col items-center">
+    {title && <h1 className="text-center mb-2 md:mb-6 text-3xl md:text-4xl font-bold">
      Our Top Courses
-    </h1>
+    </h1>}
     <div className="flex flex-wrap item-center justify-around">
-     <Course title="Frontend Development" prices='#150,000' img={FrontImg} p={course.frontEnd} data='fade-up' />
-     <Course title="Backend Development" prices='#200,000' img={BackImg} p={course.backEnd} data='fade-in'/>
-     <Course title="UI/UX Design" prices='#100,000' img={UiImg} p={course.Ui} data="fade-right" />
-     <Course title="Data Science" prices='#300,000' img={DataImg} p={course.datSci} data="fade-left"/>
-     <Course title="Digital Marketing" prices='#150,000' img={DigiImg} p={course.digiM} data="fade-down"/>
-     <Course title="Python" prices='#150,000' img={PythonImg} p={course.pyth} data="fade-up-right"/>
-     <Course title="IELTS Training" prices='#40,000' img={Ielts} p={course.ielts} data="fade-down"/>
-      <Course title="Mobile Development" prices='#150,000' img={ MobileImg } p={course.mobileDev} data="fade-up-left"/>
-      <Course title="Graphics and Multimedia" prices='#100,000' img={GraphImg} p={course.graph} data="fade-down-right"/>
+      <Link to='/plc/courses/frontend'>
+       <Course title="Frontend Development" prices='#150,000' img={FrontImg} p={course.frontEnd} data='fade-up' />
+      </Link>
+      
+      <Link to='/plc/courses/backend'>
+        <Course title="Backend Development" prices='#200,000' img={BackImg} p={course.backEnd} data='fade-in'/>
+      </Link>
+      
+      <Link to='/plc/courses/uidesign'>
+      <Course title="UI/UX Design" prices='#100,000' img={UiImg} p={course.Ui} data="fade-right" />
+      </Link>
+      
+      <Link to='/plc/courses/datascience'>
+        <Course title="Data Science" prices='#300,000' img={DataImg} p={course.datSci} data="fade-left"/>
+      </Link>
+      
+      <Link  to='/plc/courses/digitalmarketing'>
+        <Course title="Digital Marketing" prices='#150,000' img={DigiImg} p={course.digiM} data="fade-down"/>
+      </Link>
+      
+      <Link to='/plc/courses/python'>
+          <Course title="Python" prices='#150,000' img={PythonImg} p={course.pyth} data="fade-up-right"/>
+      </Link>
+      
+      <Link to='/plc/courses/ieltstraining'>
+        <Course title="IELTS Training" prices='#40,000' img={Ielts} p={course.ielts} data="fade-down"/>
+      </Link>
+      
+      <Link to='/plc/courses/mobileappdevelopment'>
+        <Course title="Mobile Development" prices='#150,000' img={ MobileImg } p={course.mobileDev} data="fade-up-left"/>
+      </Link>
+      
+      <Link to='/plc/courses/graphics&multimedia'>
+        <Course title="Graphics and Multimedia" prices='#100,000' img={GraphImg} p={course.graph} data="fade-down-right"/>
+      </Link>
     </div>
     <a
      href="#"
