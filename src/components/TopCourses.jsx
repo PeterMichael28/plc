@@ -46,44 +46,44 @@ const TopCourses = ({title}) => {
     </h1>}
     <div className="flex flex-wrap item-center justify-around">
       <Link to='/plc/courses/frontend'>
-       <Course title="Frontend Development" prices='#150,000' img={FrontImg} p={course.frontEnd} data='fade-up' />
+       <Course title="Frontend Development" prices='150,000' img={FrontImg} p={course.frontEnd} data='fade-up' />
       </Link>
       
       <Link to='/plc/courses/backend'>
-        <Course title="Backend Development" prices='#200,000' img={BackImg} p={course.backEnd} data='fade-in'/>
+        <Course title="Backend Development" prices='200,000' img={BackImg} p={course.backEnd} data='fade-in'/>
       </Link>
       
       <Link to='/plc/courses/uidesign'>
-      <Course title="UI/UX Design" prices='#100,000' img={UiImg} p={course.Ui} data="fade-right" />
+      <Course title="UI/UX Design" prices='100,000' img={UiImg} p={course.Ui} data="fade-right" />
       </Link>
       
       <Link to='/plc/courses/datascience'>
-        <Course title="Data Science" prices='#300,000' img={DataImg} p={course.datSci} data="fade-left"/>
+        <Course title="Data Science" prices='300,000' img={DataImg} p={course.datSci} data="fade-left"/>
       </Link>
       
       <Link  to='/plc/courses/digitalmarketing'>
-        <Course title="Digital Marketing" prices='#150,000' img={DigiImg} p={course.digiM} data="fade-down"/>
+        <Course title="Digital Marketing" prices='150,000' img={DigiImg} p={course.digiM} data="fade-down"/>
       </Link>
       
       <Link to='/plc/courses/python'>
-          <Course title="Python" prices='#150,000' img={PythonImg} p={course.pyth} data="fade-up-right"/>
+          <Course title="Python" prices='150,000' img={PythonImg} p={course.pyth} data="fade-up-right"/>
       </Link>
       
       <Link to='/plc/courses/ieltstraining'>
-        <Course title="IELTS Training" prices='#40,000' img={Ielts} p={course.ielts} data="fade-down"/>
+        <Course title="IELTS Training" prices='40,000' img={Ielts} p={course.ielts} data="fade-down"/>
       </Link>
       
       <Link to='/plc/courses/mobileappdevelopment'>
-        <Course title="Mobile Development" prices='#150,000' img={ MobileImg } p={course.mobileDev} data="fade-up-left"/>
+        <Course title="Mobile Development" prices='150,000' img={ MobileImg } p={course.mobileDev} data="fade-up-left"/>
       </Link>
       
       <Link to='/plc/courses/graphics&multimedia'>
-        <Course title="Graphics and Multimedia" prices='#100,000' img={GraphImg} p={course.graph} data="fade-down-right"/>
+        <Course title="Graphics and Multimedia" prices='100,000' img={GraphImg} p={course.graph} data="fade-down-right"/>
       </Link>
     </div>
     <a
-     href="#"
-     className="inline-flex space-x-3 items-center justify-center mt-4 bg-[#ff660026] p-3 text-sm text-[#FF6600] rounded-lg font-semibold m-auto"
+     href=""
+     className="inline-flex space-x-3 items-center justify-center mt-4 bg-[ff660026] p-3 text-sm text-[FF6600] rounded-lg font-semibold m-auto"
     >
      <img src={Icon} alt="" className="w-3 h-3 mr-2" />
      Load more

@@ -33,7 +33,7 @@ const Course = ( { title, prices, img, p, data } ) => {
       </p>
      </div>
     </div> */}
-    <h1 className="font-bold text-lg">{prices}</h1>
+    <h1 className="font-bold text-lg"><i className="mr-1">&#8358;</i>{prices}</h1>
    </div>
   </div>
  );

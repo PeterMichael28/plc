@@ -25,7 +25,7 @@ const Hero = () => {
    <img
     src={hero}
     alt=""
-    className="h-[40vh] xs:h-[45vh] xs:bottom-[2rem] sm:h-[50vh] sm:bottom-[6rem] md:h-[60vh] md:bottom-[12rem] lg:h-[70vh] relative lg:top-24 lg:right-2 "
+    className="h-[40vh] xs:h-[45vh] xs:bottom-[1.2rem] sm:h-[50vh] sm:bottom-[6rem] md:h-[60vh] md:bottom-[12rem] lg:h-[70vh] relative lg:top-24 lg:right-2 "
    />
   </section>
  );
